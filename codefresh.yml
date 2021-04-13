@@ -26,3 +26,4 @@ steps:
     commands: 
       - pip install pytest
       - pytest
+      - ls  
